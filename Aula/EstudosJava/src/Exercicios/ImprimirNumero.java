@@ -4,7 +4,7 @@ package Exercicios;
 
 import java.util.Scanner;
 
-public class Exercicio5 {
+public class ImprimirNumero {
     public static void ExecutarExercicio5(){
     Scanner entrada = new Scanner(System.in);
     for(int n = 1 ; n<=100 ;  n++){

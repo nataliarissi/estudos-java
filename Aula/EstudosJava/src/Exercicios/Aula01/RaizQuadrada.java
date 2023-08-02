@@ -6,7 +6,7 @@ package Exercicios.Aula01;
 
 import java.util.Scanner;
 
-public class Exercicio7 {
+public class RaizQuadrada {
  //   Math.sqrt(numero) raiz
  public static void ExecutarExercicio7(){
     Scanner entrada = new Scanner(System.in);

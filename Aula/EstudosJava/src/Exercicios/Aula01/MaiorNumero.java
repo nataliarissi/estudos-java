@@ -4,7 +4,7 @@ package Exercicios.Aula01;
 
 import java.util.Scanner;
 
-public class Exercicio3 {
+public class MaiorNumero {
     public static void ExecutarExercicio(){
     Scanner entrada = new Scanner(System.in);
     System.out.println("Primeiro número: ");

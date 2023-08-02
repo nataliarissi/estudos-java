@@ -4,7 +4,7 @@ package Exercicios.Aula01;
 
 import java.util.Scanner;
 
-public class Exercicio4 extends ClasseComLeitor{
+public class MediaAluno extends ClasseComLeitor{
     public static void ExecutarExercicio4(){
     Scanner entrada = new Scanner(System.in);
     System.out.println("Notas Aluno ");

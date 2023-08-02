@@ -3,7 +3,7 @@
 // Ler valores, calcular e jogar na tela resultado
 package Exercicios.Aula01;
 import java.util.Scanner;
-public class Exercicio2{
+public class AreaQuadrado{
 
 	public static void main(String[] args){
 	Scanner entrada = new Scanner(System.in);

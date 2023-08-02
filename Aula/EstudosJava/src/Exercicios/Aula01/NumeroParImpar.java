@@ -3,7 +3,7 @@
 
 package Exercicios.Aula01;
 
-public class Exercicio6 {
+public class NumeroParImpar {
     public static void ExecutarExercicio6(){
         for(int numero = 1 ; numero<=100 ;  numero++){
             String parImpar = numero % 2 == 0 ? "Par" : "Impar"; //ternário
