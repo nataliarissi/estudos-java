@@ -2,7 +2,7 @@ package aula02;
 
 import java.util.Scanner;
 
-public class exercicio5 {
+public class MediaAlunos {
 
 	public static void main(String[] args) {
 
@@ -23,10 +23,7 @@ public class exercicio5 {
 		} else {
 			statusAluno = "reprovado";
 		}
-		System.out.println("Aluno está " + statusAluno);
-		
-		
-
+		System.out.println("Situação atual do aluno " + statusAluno);
+	//outra forma de definir os status
 	}
-
 }
