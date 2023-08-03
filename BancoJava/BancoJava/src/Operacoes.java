@@ -21,30 +21,36 @@ public class Operacoes {
         Cliente cliente = new Cliente(nome, salario); //instanciar - passar as variáveis criadas em Cliente
         Clientes.add(cliente); //add item na lista
         System.out.println("Tamanho: " + Clientes.size()); //retorna quantos itens tem no array - colocar num print
-    }
-
-    public static void Emprestimo(){
 
     }
 
-    public static void Listar(){
-
+    public void Emprestimo(){
+        System.out.println("Digite o nome do usuário para realizar o empréstimo:");
+        String nome = Entrada.next();
+        for(int n=0; n < Clientes.size(); n++){
+            Cliente cliente = Clientes.get(n);
+        if(nome.equals(cliente.Nome)){ //comparação no java - if
+            cliente.Emprestimo = cliente.Salario * 0.05;
+            System.out.println("Empréstimo: " + cliente.Emprestimo);
+            return;
+        }
+      }
+      System.out.println("Erro");
     }
 
-    public static void Sair(){
+    public void Listar(){
+        System.out.println("Lista de clientes com salário e empréstimos: ");
+        for(int n=0; n < Clientes.size(); n++){
+            Cliente cliente = Clientes.get(n);
+            if(cliente.Emprestimo > 0)
+                System.out.println(cliente.toString());
+                return;
+    }
+ }
 
+    public void Sair(){
+        System.exit(0);
     }
 
     
 }
-// Cadastro de cliente de um banco, onde é possível realizar as operações descritas 
-// abaixo. (cadastro somente de 1 cliente).
-// Operação "cadastrar": armazenar seu nome e salário. Não aceitar valor negativo, mostrando 
-// mensagem de erro.
-// Operação "empréstimo": se salário for maior que 500, mostrar a mensagem "crédito liberado", e 
-// o valor do empréstimo, baseado na fórmula (salário * 0.05). Se não for possível, mostrar
-// mensagem "empréstimo não liberado".
-// Operação "listar": mostrar o nome, salário e o valor do empréstimo (caso ele tenha).
-// Operação "sair": sair da aplicação
-// Importante: o programa somente pode encerrar se selecionar a operação "sair". Cada operação 
-// deve ser executada em uma função. Faça um menu para selecionar as operações
