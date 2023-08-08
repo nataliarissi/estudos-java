@@ -42,15 +42,11 @@ public class Operacoes {
         System.out.println("Lista de clientes com salário e empréstimos: ");
         for(int n=0; n < Clientes.size(); n++){
             Cliente cliente = Clientes.get(n);
-            if(cliente.Emprestimo > 0)
-                System.out.println(cliente.toString());
-                return;
+            System.out.println(cliente.toString());
+        }
     }
- }
 
     public void Sair(){
         System.exit(0);
     }
-
-    
 }

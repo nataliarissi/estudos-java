@@ -10,6 +10,10 @@ public class Cliente {
 
     @Override 
     public String toString(){
-        return "Nome: " + Nome + ", Salário: " + Salario + ", Empréstimo: " + Emprestimo;
+        String resultado = "Nome: " + Nome + ", Salário: " + Salario;
+        if(Emprestimo > 0){
+            resultado += ", Empréstimo: " + Emprestimo;
+        }
+        return resultado;
     }
 }
