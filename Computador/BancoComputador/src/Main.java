@@ -1,21 +1,19 @@
-public class App {
+import java.util.Scanner;
+
+import Classes.Computador;
+
+public class Main {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-
-        Computador comp = new Computador();
 
         System.out.println("Digite o nome do computador: ");
         String nome = scanner.next();
         System.out.println("Digite o clock: ");
         int clock = scanner.nextInt();
 
-        comp.Nome = nome;
-        comp.Clock = clock;
+        Computador comp = new Computador(nome, clock);
 
-        // comp.mostraNomeComputador();
-        // comp.mostraClock();
-
-        System.out.println(comp);
+        System.out.println(comp.mostraNomeComputador() + comp.mostraClock());
     }
 }
 
