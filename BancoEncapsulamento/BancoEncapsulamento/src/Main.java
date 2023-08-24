@@ -1,6 +1,8 @@
 import Celular.Celular;
+import FolhaPagamento.FolhaPagamento;
 import Pessoa.Pessoa;
 import Veiculos.Carro;
+import Veiculos.Moto;
 
 public class Main{
     public static void main(String[] args) throws Exception {
@@ -37,6 +39,18 @@ public class Main{
 
 ///////////////////////////////////////////////////
 
+        Moto moto = new Moto();
 
+        System.out.println(moto.toString());
+
+///////////////////////////////////////////////////
+
+        FolhaPagamento primeiraFolhaPag = new FolhaPagamento();
+        FolhaPagamento segundaFolhaPag = new FolhaPagamento("Ayanokoji", 1800, "Kei", 1550);
+
+        System.out.println(primeiraFolhaPag.toString());
+        System.out.println(segundaFolhaPag.toString());
+        System.out.println("Valor total da primeira folha: " + primeiraFolhaPag.totalFolhaPagamento());
+        System.out.println("Valor total da segunda folha: " + segundaFolhaPag.totalFolhaPagamento());
     }
 }
