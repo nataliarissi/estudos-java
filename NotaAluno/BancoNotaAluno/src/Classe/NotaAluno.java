@@ -29,4 +29,9 @@ public class NotaAluno {
         float resultado = (Nota1 + Nota2) / 2;
         return resultado;
     }
+
+    // @Override
+	// public String toString() {
+	// 	return "Nome do Aluno: " + NomeAluno + ", primeira nota: R$" + Nota1 + ", segunda nota: " + Nota2;
+	// }
 }
