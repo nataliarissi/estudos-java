@@ -7,40 +7,39 @@ public class Produto {
 	private String Descricao;
 
 	public Produto(String nome, float preco) {
-		this.Nome = nome;
-		this.Preco = preco;
-		this.Descricao = "";
+		Nome = nome;
+		Preco = preco;
+		Descricao = "";
 	}
 
 	public Produto(String nome, float preco, String descricao) {
-		this.Nome = nome;
-		this.Preco = preco;
-		this.Descricao = descricao;
+		Nome = nome;
+		Preco = preco;
+		Descricao = descricao;
 	}
 
 	public String getNome() {
 		return Nome;
 	}
 	public void setNome(String nome) {
-		this.Nome = nome;
+		Nome = nome;
 	}
 	public float getPreco() {
 		return Preco;
 	}
 	public void setPreco(float preco) {
-		this.Preco = preco;
+		Preco = preco;
 	}
 	public String getDescricao() {
 		return Descricao;
 	}
 	public void setDescricao(String descricao) {
-		this.Descricao = descricao;
+		Descricao = descricao;
 	}
 
 	@Override
 	public String toString() {
-		return "Nome: " + Nome + ", preco: R$" + Preco + 
-				", desc.: " + Descricao;
+		return "Nome: " + Nome + ", preco: R$" + Preco + ", desc.: " + Descricao;
 	}
 
 	@Override
