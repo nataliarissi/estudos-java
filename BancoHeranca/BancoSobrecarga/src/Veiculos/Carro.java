@@ -1,15 +1,14 @@
-package Entidades.Automoveis;
+package Veiculos;
 
-public class Carro extends Veiculo{
+public class Carro extends Veiculo {
+	private int _nroPortas;
+	private String _tipoCambio;
+	private String _revestBanco;
+	private String _tipoDirecao;
+	private int _potencia;
+	private int _lugares;
+	private int _capPortaMalas;
 	
-    private int _nroPortas;
-    private String _tipoCambio;
-    private String _revestBanco;
-    private String _tipoDirecao;
-    private int _potencia;
-    private int _lugares;
-    private int _capPortaMalas;
-    
 	public Carro(String placa, String modelo, String marca, 
 			int ano, String cor, String proprietario, int capTanque,
 			String tipoFreio, int nroPortas, String tipoCambio, 
@@ -84,7 +83,17 @@ public class Carro extends Veiculo{
 
 	@Override
 	public String toString() {
-		return "Carro - NroPorta: " + _nroPortas + ", TipoCambio: " + _tipoCambio + ", RevestBanco: " + _revestBanco + ", TipoDirecao:" + _tipoDirecao + ", Potencia: " + _potencia + ", Lugares: " + _lugares + ", CapPortaMalas: " + _capPortaMalas + ", Placa: " + _placa + ", Modelo: " + _modelo;
+		return "Número de Portas: " + _nroPortas + ", Tipo de câmbio: " + _tipoCambio + ", Revestimento do banco: " + _revestBanco
+				+ ", Tipo de Direção: " + _tipoDirecao + ", Potência: " + _potencia + ", Lugares: " + _lugares
+				+ ", Capo Porta Malas: " + _capPortaMalas + ", Placa: " + getPlaca() + ", Modelo:" + Modelo + ", Marca: " + Marca
+				+ ", Ano: " + Ano + ", Cor: " + Cor + ", Proprietário: " + Proprietario + ", CapTanque:" + CapTanque
+				+ ", TipoFreio: " + TipoFreio + super.toString();
 	}
 
+	public String toStringV2() {
+		return super.toString() + "Número de Portas: " + _nroPortas + ", Tipo de Câmbio: " + _tipoCambio + ", RevestBanco: " + _revestBanco
+				+ ", Tipo de Direção: " + _tipoDirecao + ", Potência: " + _potencia + ", Lugares: " + _lugares
+				+ ", Capo Porta Malas: " + _capPortaMalas;
+	}
+	
 }

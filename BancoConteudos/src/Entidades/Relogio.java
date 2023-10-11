@@ -22,6 +22,6 @@ public class Relogio{
 
     @Override
     public String toString(){
-        return "Horário no relógio: " + _hora + ":" +  _minuto + ":"+ _segundo;
+        return "Horário no relógio: " + _hora + ":" +  _minuto + ":" + _segundo;
     }
 }
