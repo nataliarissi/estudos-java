@@ -1,24 +1,22 @@
-package aula12;
+package Pessoa;
 
 public class TestePessoa {
 
 	public static void main(String[] args) {
-		Endereco endPf = new Endereco("Rua abc", 100, "Porto Alegre");
-		PessoaFisica pf = new PessoaFisica("Joao", endPf, 51443344, 
-				"111.111.111-11", "111111111111");
-		System.out.println(pf.getNome());
-		System.out.println(pf.getRg());
-		System.out.println(pf.getEndereco().getCidade());
-		System.out.println(pf);
+		Endereco enderecoPFisica = new Endereco("Rua do Amor", 101, "Porto Alegre");
+		PessoaFisica pessoaFisica = new PessoaFisica("Luke", enderecoPFisica, 66078104, 
+				"010.668.719-11", "189001784301");
+		System.out.println(pessoaFisica.getNome());
+		System.out.println(pessoaFisica.getRg());
+		System.out.println(pessoaFisica.getEndereco().getCidade());
+		System.out.println(pessoaFisica);
 
-		Endereco endPj = new Endereco("Rua Xyz", 200, "Porto Alegre");
-		PessoaJuridica pj = new PessoaJuridica("Empresa ABC", endPj, 512323332, 
-				"2222222222", "333333333");
-		System.out.println(pj.getEndereco());
-		System.out.println(pj.getCnpj());
-		System.out.println(pj.getEndereco().getRua());
-		System.out.println(pj);
-
+		Endereco enderecoPJuridica = new Endereco("Rua da Paixão", 402, "Porto Alegre");
+		PessoaJuridica pessoajuridica = new PessoaJuridica("Empresa do Mais Lindo", enderecoPJuridica, 78870101, 
+				"1820796401", "987114670");
+		System.out.println(pessoajuridica.getEndereco());
+		System.out.println(pessoajuridica.getCnpj());
+		System.out.println(pessoajuridica.getEndereco().getRua());
+		System.out.println(pessoajuridica);
 	}
-
 }

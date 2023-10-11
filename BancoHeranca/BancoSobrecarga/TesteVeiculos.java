@@ -3,20 +3,16 @@ package Veiculos;
 public class TesteVeiculos {
 
 	public static void main(String[] args) {
-		Moto m1 = new Moto("AAA3322", "150", "Yamaha", 2010, "vermelho",
-				"Joao", 10, "disco", 150, "Street", "eletrica", false);
-		System.out.println(m1.getTipoPartida());
-		System.out.println(m1.getPlaca());
-		System.out.println(m1);
+		Moto moto = new Moto("NAT6601", "180", "Yamaha", 2010, "preto",
+				"Luke", 11, "disco", 120, "Street", "elétrica", false);
+		System.out.println(moto.getTipoPartida());
+		System.out.println(moto.getPlaca());
+		System.out.println(moto);
 		
-		Carro c1 = new Carro("ATZ3332", "Uno", "Fiat", 2000, "branco", 
-				"Jose", 45, "disco", 4, "manual", "tecido", "manual", 75, 4, 200);
-		System.out.println(c1.getPlaca());
-		System.out.println(c1.getRevestBanco());
-		System.out.println(c1);
-		
-		
-		
+		Carro carro = new Carro("ITH7081", "Onix", "Chevrolet ", 2000, "branco", 
+				"Itachi", 41, "disco", 7, "manual", "tecido", "manual", 75, 4, 200);
+		System.out.println(carro.getPlaca());
+		System.out.println(carro.getRevestBanco());
+		System.out.println(carro);
 	}
-
 }
