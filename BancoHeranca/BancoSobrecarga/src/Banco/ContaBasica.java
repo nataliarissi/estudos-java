@@ -2,10 +2,12 @@ package Banco;
 
 public class ContaBasica extends ContaBanco {
 	private float _taxaAdministrativaMensal;
-	public ContaBasica(String nroConta, float limite, float juros, float agencia, float saldo, String nomeCliente, int tipoCartao,
+	private int _tipoCartao;
+	public ContaBasica(String nroConta, float agencia, float saldo, String nomeCliente, int tipoCartao,
 		float taxaAdministrativaMensal) {
-		super(nroConta, 0, 0, agencia, 0, nomeCliente);
+		super(nroConta, 0, 0.1f, agencia, 0, nomeCliente);
 		_taxaAdministrativaMensal = taxaAdministrativaMensal;
+		_tipoCartao = tipoCartao;
 	}
 	
 	public float getTaxaAdministrativaMensal() {
@@ -14,10 +16,6 @@ public class ContaBasica extends ContaBanco {
 
 	public void setTipoCartao(int taxaAdministrativaMensal) {
 		_taxaAdministrativaMensal = taxaAdministrativaMensal;
-	}
-
-	public float taxaMensalCB(){
-		return Limite * _taxaAdministrativaMensal;
 	}
 
 	@Override

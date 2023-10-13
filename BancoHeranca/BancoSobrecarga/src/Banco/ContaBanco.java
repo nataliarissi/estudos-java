@@ -15,18 +15,7 @@ public class ContaBanco {
 		Agencia = agencia;
 		Saldo = saldo;
 		NomeCliente = nomeCliente;
-
-	if (this instanceof ContaBasica) {
-		Limite = 0;
-		Juros = 0.10f;
-	} else if (this instanceof ContaPadrao) {
-		Limite = 1000;
-		Juros = 0.05f;
-	} else if (this instanceof ContaPremium) {
-		Limite = 5000;
-		Juros = 0.01f;
 	}
- }
 
 	public String getNroConta() {
 		return NroConta;
