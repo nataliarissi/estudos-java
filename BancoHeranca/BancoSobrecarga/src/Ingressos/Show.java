@@ -1,14 +1,31 @@
 package Ingressos;
 
+import java.util.ArrayList;
+
 public class Show {
 
-	public static void main(String[] args) {
-        IngressoBackStage ingressoBackStage = new IngressoBackStage(0, null);
-        IngressoPista ingressoPista = new IngressoPista(0, null);
-        IngressoVip ingressoVip = new IngressoVip(0, null);
-
-        System.out.println(ingressoBackStage.toString());
-        System.out.println(ingressoPista.toString());
-        System.out.println(ingressoVip.toString());
-    }
+	protected ArrayList<Ingresso> ingressos;
+	
+	public Show() {
+		ingressos = new ArrayList<Ingresso>();
+	}
+	
+	public boolean AdicionarIngresso(Ingresso i) {
+		if (ingressos.size() >= 4) {
+			return false;
+		}
+		ingressos.add(i);
+		return true;
+	}
+	
+	public void MostrarIngressos() {
+		for (Ingresso temp : ingressos) {
+			//System.out.println(temp);
+			MostraIngresso(temp);
+		}
+	}
+	
+	private void MostraIngresso(Ingresso ing) {
+		System.out.println(ing);
+	}
 }

@@ -9,3 +9,23 @@ public class Ingresso {
         Descricao = descricao;
     }
 }
+
+//outro jeito para a execução
+
+// public class Ingresso {
+// 	protected float Valor;
+	
+// 	public Ingresso(float valor) {
+// 		Valor = valor;
+// 	}
+// 	public float getValor() {
+// 		return Valor;
+// 	}
+// 	public void setValor(float valor) {
+// 		Valor= valor;
+// 	}
+// 	public String getDescricao() {
+// 		return "Ingresso";
+// 	}
+	
+// }
