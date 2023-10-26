@@ -14,7 +14,6 @@ public class Modem {
     protected float Velocidade;
     protected int NroPortarsEth;
 
-
     @Override 
     public String toString(){
         return "Nome do Modem: " + Nome 

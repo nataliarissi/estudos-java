@@ -20,7 +20,7 @@ public class Sistema {
 	
 	public void MostrarModens() {
 		for (Modem modm : modems) {
-			//System.out.println(temp);
+			//System.out.println(modm);
 			MostraModem(modm);
 		}
 	}
