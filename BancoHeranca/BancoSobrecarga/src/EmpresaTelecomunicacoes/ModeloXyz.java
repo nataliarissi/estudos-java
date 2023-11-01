@@ -1,18 +1,21 @@
 package EmpresaTelecomunicacoes;
 
+import Enum.PerfilPortaFibra;
+
 public class ModeloXyz extends Modem{
     
-    public ModeloXyz(float velocidadePortaFibra){
+    public ModeloXyz(PerfilPortaFibra velocidadePortaFibra){
         super("Modem", "XYZ", 120, 4);
-        _velocidadePortaFibra = velocidadePortaFibra;
+        this.velocidadePortaFibra = velocidadePortaFibra;
     }
 
-    private float _velocidadePortaFibra;
+    private PerfilPortaFibra velocidadePortaFibra;
 
     public String obterVelocidade(){
-        if(_velocidadePortaFibra > 1000){
+        if(velocidadePortaFibra.equals(PerfilPortaFibra.FASTETHERNET)){
             return "Alta";
-        }
-        return "Baixa";
+        }if(velocidadePortaFibra.equals(PerfilPortaFibra.GIGABIT)){
+            return "Baixa";
+        }return "Desconhecido";
     }
 }

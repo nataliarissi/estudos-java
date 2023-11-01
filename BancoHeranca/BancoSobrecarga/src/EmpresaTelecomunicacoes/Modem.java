@@ -18,7 +18,7 @@ public class Modem {
     public String toString(){
         return "Nome do Modem: " + Nome 
             + ", modelo: " + Modelo 
-            + ", velocidade" + Velocidade
+            + ", velocidade: " + Velocidade
             + ", número de portasEth: " + NroPortarsEth;
     }
 }
