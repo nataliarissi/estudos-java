@@ -1,14 +1,15 @@
 package Pessoa;
 
 public class PessoaFisica extends Pessoa {
-	private String _cpf;
-	private String _rg;
 	
 	public PessoaFisica(String nome, Endereco endereco, int telefone, String cpf, String rg) {
 		super(nome, endereco, telefone);
 		_cpf = cpf;
 		_rg = rg;
 	}
+
+	private String _cpf;
+	private String _rg;
 
 	public String getCpf() {
 		return _cpf;

@@ -1,15 +1,16 @@
 package Pessoa;
 
 public class Pessoa {
-	protected String Nome;
-	protected Endereco Endereco;
-	protected int Telefone;
-	
+
 	public Pessoa(String nome, Endereco endereco, int telefone) {
 		Nome = nome;
 		Endereco = endereco;
 		Telefone = telefone;
 	}
+
+	protected String Nome;
+	protected Endereco Endereco;
+	protected int Telefone;
 
 	public String getNome() {
 		return Nome;

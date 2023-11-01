@@ -1,18 +1,10 @@
 package Veiculos;
 
 public class Veiculo {
-	private String _placa;
-	protected String Modelo;
-	protected String Marca;
-	protected int Ano;
-	protected String Cor; 
-	protected String Proprietario; 
-	protected int CapTanque;
-	protected String TipoFreio;
-	
+
 	public Veiculo(String placa, String modelo, String marca, 
-			int ano, String cor, String proprietario, int capTanque,
-			String tipoFreio) {
+		int ano, String cor, String proprietario, int capTanque,
+		String tipoFreio) {
 		_placa = placa;
 		Modelo = modelo;
 		Marca = marca;
@@ -23,6 +15,15 @@ public class Veiculo {
 		TipoFreio = tipoFreio;
 	}
 
+	protected String Modelo;
+	protected String Marca;
+	protected int Ano;
+	protected String Cor; 
+	protected String Proprietario; 
+	protected int CapTanque;
+	protected String TipoFreio;
+	private String _placa;
+	
 	public String getPlaca() {
 		return _placa;
 	}
@@ -89,7 +90,13 @@ public class Veiculo {
 	
 	@Override
 	public String toString() {
-		return "Placa do Veiculo: " + _placa + ", Modelo: " + Modelo + ", Marca: " + Marca + ", Ano: " + Ano + ", Cor:" + Cor
-				+ ", Proprietário: " + Proprietario + ", Capacidade do Tanque: " + CapTanque + ", Tipo de Freio:" + TipoFreio;
+		return "Placa do Veiculo: " + _placa 
+				+ ", Modelo: " + Modelo 
+				+ ", Marca: " + Marca 
+				+ ", Ano: " + Ano 
+				+ ", Cor:" + Cor
+				+ ", Proprietário: " + Proprietario 
+				+ ", Capacidade do Tanque: " + CapTanque 
+				+ ", Tipo de Freio:" + TipoFreio;
 	}
 }

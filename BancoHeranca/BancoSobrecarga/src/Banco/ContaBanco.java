@@ -1,12 +1,6 @@
 package Banco;
 
 public class ContaBanco {
-	protected String NroConta;
-	protected float Limite;
-	protected float Juros;
-	protected float Agencia;
-	protected float Saldo;
-	protected String NomeCliente;
 	
 	public ContaBanco(String nroConta, float limite, float juros, float agencia, float saldo, String nomeCliente) {
 		NroConta = nroConta;
@@ -16,6 +10,13 @@ public class ContaBanco {
 		Saldo = saldo;
 		NomeCliente = nomeCliente;
 	}
+
+	protected String NroConta;
+	protected float Limite;
+	protected float Juros;
+	protected float Agencia;
+	protected float Saldo;
+	protected String NomeCliente;
 
 	public String getNroConta() {
 		return NroConta;
@@ -68,10 +69,10 @@ public class ContaBanco {
 	@Override
 	public String toString(){
 		return "Número da conta: " + NroConta 
-				+ ", limite: " + Limite
-				+ ", juros: " + Juros
-				+ ", agência: " + Agencia
-				+ ", saldo: " + Saldo
-				+ ", nome do cliente: " + NomeCliente;
+			+ ", limite: " + Limite
+			+ ", juros: " + Juros
+			+ ", agência: " + Agencia
+			+ ", saldo: " + Saldo
+			+ ", nome do cliente: " + NomeCliente;
 	}	
 }

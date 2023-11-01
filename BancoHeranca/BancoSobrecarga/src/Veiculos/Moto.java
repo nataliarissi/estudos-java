@@ -1,23 +1,24 @@
 package Veiculos;
 
 public class Moto extends Veiculo {
-	private int _cilindrada;
-	private String _tipoMoto;
-	private String _tipoPartida;
-	private boolean _carenagem;
-	
+
 	public Moto(String placa, String modelo, String marca, int ano, 
-			String cor, String proprietario, int capTanque,
-			String tipoFreio, int cilindrada, String tipoMoto, 
-			String tipoPartida, boolean carenagem) {
+		String cor, String proprietario, int capTanque,
+		String tipoFreio, int cilindrada, String tipoMoto, 
+		String tipoPartida, boolean carenagem) {
 		
 		super(placa, modelo, marca, ano, cor, proprietario, capTanque, 
-				tipoFreio);
+		tipoFreio);
 		_cilindrada = cilindrada;
 		_tipoMoto = tipoMoto;
 		_tipoPartida = tipoPartida;
 		_carenagem = carenagem;
 	}
+
+	private int _cilindrada;
+	private String _tipoMoto;
+	private String _tipoPartida;
+	private boolean _carenagem;
 
 	public int getCilindrada() {
 		return _cilindrada;
@@ -53,9 +54,17 @@ public class Moto extends Veiculo {
 
 	@Override
 	public String toString() {
-		return "Cilindrada: " + _cilindrada + ", Tipo de Moto: " + _tipoMoto + ", Tipo de Partida: " + _tipoPartida
-				+ ", Carenagem: " + _carenagem + ", Modelo: " + Modelo + ", Marca: " + Marca + ", Ano: " + Ano + ", Cor: "
-				+ Cor + ", Proprietário: " + Proprietario + ", Capacidade do Tanque: " + CapTanque + ", Tipo de Freio: " + TipoFreio
+		return "Cilindrada: " + _cilindrada 
+				+ ", Tipo de Moto: " + _tipoMoto 
+				+ ", Tipo de Partida: " + _tipoPartida
+				+ ", Carenagem: " + _carenagem 
+				+ ", Modelo: " + Modelo 
+				+ ", Marca: " + Marca 
+				+ ", Ano: " + Ano 
+				+ ", Cor: " + Cor 
+				+ ", Proprietário: " + Proprietario 
+				+ ", Capacidade do Tanque: " + CapTanque 
+				+ ", Tipo de Freio: " + TipoFreio
 				+ ", getPlaca(): " + getPlaca();
 	}		
 }

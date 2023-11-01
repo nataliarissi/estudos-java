@@ -1,15 +1,16 @@
 package Pessoa;
 
 public class PessoaJuridica extends Pessoa {
-	private String _cnpj;
-	private String _inscricaoEstadual;
-	
+
 	public PessoaJuridica(String nome, Endereco endereco, int telefone, 
-			String cnpj, String inscricaoEstadual) {
+		String cnpj, String inscricaoEstadual) {
 		super(nome, endereco, telefone);
 		_cnpj = cnpj;
 		_inscricaoEstadual = inscricaoEstadual;
 	}
+
+	private String _cnpj;
+	private String _inscricaoEstadual;
 
 	public String getCnpj() {
 		return _cnpj;
@@ -29,8 +30,11 @@ public class PessoaJuridica extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa Jurídica - CNPJ: " + _cnpj + ", inscrição Estadual: " + _inscricaoEstadual + ", nome: " + Nome 
-		+ ", endereco: " + Endereco + ", telefone: " + Telefone;
+		return "Pessoa Jurídica - CNPJ: " + _cnpj 
+		+ ", inscrição Estadual: " + _inscricaoEstadual 
+		+ ", nome: " + Nome 
+		+ ", endereco: " + Endereco 
+		+ ", telefone: " + Telefone;
 	}
 	
 	

@@ -1,15 +1,16 @@
 package Pessoa;
 
 public class Endereco {
-	private String _rua;
-	private int _nro;
-	private String _cidade;
 	
 	public Endereco(String rua, int nro, String cidade) {
 		_rua = rua;
 		_nro = nro;
 		_cidade = cidade;
 	}
+
+	private String _rua;
+	private int _nro;
+	private String _cidade;
 
 	public String getRua() {
 		return _rua;

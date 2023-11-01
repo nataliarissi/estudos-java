@@ -1,34 +1,25 @@
 package Eletronico;
 
+import Enum.ModeloTv;
+
 public class Televisao extends ProdutoEletronico {
-	private int _tamanho;
-	private String _tipo; // LCD/LED/OLED
 	
-	public Televisao(String nome, float preco, String marca, int tamanho, String tipo) {
+	public Televisao(String nome, float preco, String marca, int tamanho, ModeloTv modeloTv) {
 		super(nome, preco, marca);
 		_tamanho = tamanho;
-		_tipo = tipo;
+		this.modeloTv = modeloTv;
 	}
 
-	public int getTamanho() {
-		return _tamanho;
-	}
-
-	public void setTamanho(int tamanho) {
-		_tamanho = tamanho;
-	}
-
-	public String getTipo() {
-		return _tipo;
-	}
-
-	public void setTipo(String tipo) {
-		_tipo = tipo;
-	}
+	private int _tamanho;
+	private ModeloTv modeloTv;
 
 	@Override
 	public String toString() {
-		return "Tamanho da televisão: " + _tamanho + ", tipo: " + _tipo + ", nome: " + Nome + ", preco: " + Preco + ", marca: " + Marca;
+		return "Tamanho da televisão: " + _tamanho 
+				+ ", tipo: " + modeloTv + ", nome: " 
+				+ Nome + ", preco: " 
+				+ Preco + ", marca: " 
+				+ Marca;
 	}
 	
 }

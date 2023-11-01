@@ -1,24 +1,25 @@
 package Eletronico;
 
-public class Radio extends ProdutoEletronico {
-	private int _potenciaRMS;
+import Enum.ModeloRadio;
 
-	public Radio(String nome, float preco, String marca, int potenciaRMS) {
+public class Radio extends ProdutoEletronico {
+
+	public Radio(String nome, float preco, String marca, int potenciaRMS, ModeloRadio modeloRadio) {
 		super(nome, preco, marca);
 		_potenciaRMS = potenciaRMS;
+		this.modeloRadio = modeloRadio;
 	}
 
-	public int getPotenciaRMS() {
-		return _potenciaRMS;
-	}
-
-	public void setPotenciaRMS(int potenciaRMS) {
-		_potenciaRMS = potenciaRMS;
-	}
+	private int _potenciaRMS;
+	private ModeloRadio modeloRadio;
 
 	@Override
 	public String toString() {
-		return "PotênciaRMS do rádio: " + _potenciaRMS + ", nome: " + Nome + ", preço: " + Preco + ", marca: " + Marca;
+		return "PotênciaRMS do rádio: " + _potenciaRMS 
+				+ ", nome: " + Nome 
+				+ ", preço: " + Preco 
+				+ ", marca: " + Marca
+				+ ", modelo: " + modeloRadio;
 	}
 	
 }
